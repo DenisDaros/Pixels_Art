@@ -1,6 +1,7 @@
 body {
     text-align: center;
 }
+
 .color {
     margin-left: auto;
     margin-right: auto;
@@ -9,16 +10,18 @@ body {
     height: 100px;
     display: inline-block
 }
+
 #pixel-board {
     display: flex;
     flex-wrap: wrap;
-      /* display: flex;
+    /* display: flex;
     flex-wrap: wrap; referência de código gitHub https://github.com/tryber/sd-022-b-project-pixels-art/pull/141/commits/2fbba0f2a6a783c6fe286c0131506cdd42a8c08a */
     width: 240px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
+
 .pixel {
     display: inline-block;
     background-color: white;
@@ -27,4 +30,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 1px;
-  }
+}
+.selected {
+    
+}
