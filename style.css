@@ -32,5 +32,17 @@ body {
     border-width: 1px;
 }
 .selected {
-    
+
+}
+.black {
+    background-color: black;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
 }

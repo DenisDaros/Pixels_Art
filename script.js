@@ -1,11 +1,3 @@
-
-const preto = document.getElementsByClassName("color")[0].style.backgroundColor = "black";
-const blue = document.getElementsByClassName("color")[1].style.backgroundColor = "blue";
-const amarelo = document.getElementsByClassName("color")[2].style.backgroundColor = "yellow";
-const vermelho = document.getElementsByClassName("color")[3].style.backgroundColor = "red";
-
-
-
 window.onload = function () {
     let color = document.querySelectorAll(".color");
    
@@ -16,5 +8,17 @@ window.onload = function () {
             e.target.classList.add("selected")
         });
     }
-    
+    // https://stackoverflow.com/questions/9012537/how-to-get-the-element-clicked-for-the-whole-document
+
+
+let pixel = document.querySelectorAll(".pixel");
+    for(i = 0;i < pixel.length;i += 1){
+        pixel[i].addEventListener("click",function(e){
+            let seletor = document.querySelector(".selected")
+            if(e.target.classList.length > 1){
+                e.target.classList.remove(e.target.classList[1])
+            }
+            e.target.classList.add(seletor.classList[1]);
+        })
+    }
 }
